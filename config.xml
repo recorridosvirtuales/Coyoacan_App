@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns 		= "http://www.w3.org/ns/widgets"
+		xmlns:gap 	= "http://phonegap.com/ns/1.0"
+		id			= "com.phonegap.ejemplo"
+		version 	= "0.0.1" >
+		<name> Prueba Panorosca </name>
+		<description> Prueba APP </description>
+		<author href="http://www.recorridosvirtuales.com" email="contacto@recorridosvirtuales.com">Felipe Gonzalez</author>
+		<preference name	="webviewbounce" value="false"/>
+		<preference name	="prerenderd-icon" value="true"/>
+		<preference name	="ios-statusbarstyle" value="black-translucent"/>
+		<preference name	="fullscreen" value="true"/>
+		<icon src="icon.png" />
+		
+</widget>

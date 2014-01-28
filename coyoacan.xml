@@ -1,0 +1,93 @@
+<krpano version="1.16" title="Prueba de APP" onstart="loadscene(coyoacan_para_app, null, MERGE);">
+
+<plugin name="gyro"
+devices="ios"
+url="plugins/gyro.js"
+keep="true"
+enabled="true"
+camroll="false"
+friction="0.5"
+velastic="0"
+/>
+<autorotate enabled="true" 
+            waittime="4.0" 
+            accel="1.2" 
+            speed="2.5" 
+            horizon="off"
+            />
+
+	<!-- disable the default progress bar -->
+	<progress showload="none" showwait="none" />
+	
+ <!-- botones (zoom, direction) para html5  -->
+<plugin name="in"     
+url="skin/btn_plus.png"  
+devices="html5" 
+keep="true"
+align="bottom" x="-125" y="30"  
+ondown="set(fov_moveforce,-1);"  
+onup="set(fov_moveforce,0);" />
+
+<plugin name="out"      
+url="skin/btn_minus.png"
+devices="html5" 
+keep="true"
+align="bottom" x="-75" y="30"  
+ondown="set(fov_moveforce,+1);"  
+onup="set(fov_moveforce,0);" />
+
+<plugin name="left"   
+url="skin/btn_left.png"  
+devices="html5" 
+keep="true"
+align="bottom" x="-25"  y="30"  
+ondown="set(hlookat_moveforce,-1);"  
+onup="set(hlookat_moveforce,0);" />
+
+<plugin name="right"  
+url="skin/btn_right.png" 
+devices="html5" 
+keep="true"
+align="bottom" x="25"  y="30" 
+ondown="set(hlookat_moveforce,+1);"  
+onup="set(hlookat_moveforce,0);" />
+
+<plugin name="up"   
+url="skin/btn_up.png"    
+devices="html5" 
+keep="true"
+align="bottom" x="75"   y="30" 
+ondown="set(vlookat_moveforce,-1);"  
+onup="set(vlookat_moveforce,0);" />
+
+<plugin name="down"   
+url="skin/btn_down.png"  
+devices="html5" 
+keep="true"
+align="bottom" x="125"  y="30" ondown="set(vlookat_moveforce,+1);"  onup="set(vlookat_moveforce,0);" />
+	
+	<scene name="coyoacan_para_app" title="coyoacan_para_app" onstart="" thumburl="panos/coyoacan_para_app.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="100" vlookat="30" fovtype="MFOV" fov="120" maxpixelzoom="1.2" fovmin="45" fovmax="150" limitview="auto" />
+
+		<preview url="panos/coyoacan_para_app.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="1910" tiledimageheight="1910">
+				<cube url="panos/coyoacan_para_app.tiles/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="955" tiledimageheight="955">
+				<cube url="panos/coyoacan_para_app.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="panos/coyoacan_para_app.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/coyoacan_para_app.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+	</scene>
+
+
+</krpano>
