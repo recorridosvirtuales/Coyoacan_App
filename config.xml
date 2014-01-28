@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns 		= "http://www.w3.org/ns/widgets"
 		xmlns:gap 	= "http://phonegap.com/ns/1.0"
-		id			= "com.phonegap.aeropano"
+		id			= "com.recorridosvirtuales.aeropano"
 		version 	= "0.0.1" >
 		<name> Aeropano Coyoacán </name>
 		<description> Panorama aéreo del Jardín Hidalgo en el centro de Coyoacán </description>
