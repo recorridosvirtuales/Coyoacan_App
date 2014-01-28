@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns 		= "http://www.w3.org/ns/widgets"
 		xmlns:gap 	= "http://phonegap.com/ns/1.0"
-		id			= "com.phonegap.ejemplo"
+		id			= "com.phonegap.aeropano"
 		version 	= "0.0.1" >
-		<name> Prueba Panorosca </name>
-		<description> Prueba APP </description>
+		<name> Aeropano Coyoacán </name>
+		<description> Panorama aéreo del Jardín Hidalgo en el centro de Coyoacán </description>
 		<author href="http://www.recorridosvirtuales.com" email="contacto@recorridosvirtuales.com">Felipe Gonzalez</author>
 		<preference name	="webviewbounce" value="false"/>
 		<preference name	="prerenderd-icon" value="true"/>
 		<preference name	="ios-statusbarstyle" value="black-translucent"/>
+		<preference name	="orienation" value="default" />
 		<preference name	="fullscreen" value="true"/>
+		<preference name="exit-on-suspend" value="true" />
 		<icon src="icon.png" />
+		<icon src="skin/icons/57x57.png" gap:platform="ios" width="57" height="57" />
+		<icon src="skin/icons/72x72.png" gap:platform="ios" width="72" height="72" />
+		<icon src="skin/icons/114x114.png" gap:platform="ios" width="114" height="114" />
+		<icon src="skin/icons/144x144.png" gap:platform="ios" width="144" height="144" />
+		<icon src="skin/icons/57x57.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="skin/icons/72x72.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="skin/icons/114x114.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="skin/icons/144x144.png" gap:platform="android" gap:density="xhdpi" />
+		
+		<gap:splash src="skin/320x480.png" gap:platform="ios" width="320" height="480" />
+		<gap:splash src="skin/640x960.png" gap:platform="ios" width="640" height="960" />
+		<gap:splash src="skin/640x1136.png" gap:platform="ios" width="640" height="1136" />
+		<gap:splash src="skin/1024x768.png" gap:platform="ios" width="1024" height="748" />
+		<gap:splash src="skin/768x1004.png" gap:platform="ios" width="768" height="1004" />
+		<gap:splash src="skin/2048x1496.png" gap:platform="ios" width="2048" height="1496" />
+		<gap:splash src="skin/1536x2008.png" gap:platform="ios" width="1536" height="2008" />
+		
+		<gap:splash src="skin/240x400.png" gap:platform="android" gap:density="ldpi" />
+		<gap:splash src="skin/320x480.png" gap:platform="android" gap:density="mdpi" />
+		<gap:splash src="skin/480x800.png" gap:platform="android" gap:density="hdpi" />
+		<gap:splash src="skin/640x960.png" gap:platform="android" gap:density="xhdpi" />
+		
+<!--plataformas -->		
+		<gap:platform name="ios" />
+		<gap:platform name="android" />
 		
 </widget>
