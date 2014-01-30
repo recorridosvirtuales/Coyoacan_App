@@ -65,6 +65,13 @@ url="skin/btn_down.png"
 devices="html5" 
 keep="true"
 align="bottom" x="125"  y="30" ondown="set(vlookat_moveforce,+1);"  onup="set(vlookat_moveforce,0);" />
+
+<plugin name="cedula"   
+url="skin/cedula_aereo.png"  
+devices="html5" 
+keep="true"
+enabled="false"
+align="righttop" x="0"  y="0"/>
 	
 	<scene name="coyoacan_para_app" title="coyoacan_para_app" onstart="" thumburl="panos/coyoacan_para_app.tiles/thumb.jpg" lat="" lng="" heading="">
 
